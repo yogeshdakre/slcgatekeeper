@@ -346,16 +346,18 @@
        setInterval(function(){
 	   if(i<=9){
          document.getElementById("demosoc").src="img/"+i+".png";
+		 i++; 
         }
         else if(i>9){
-          document.getElementById("demosoc").src="img/"+i+""+j+".png";
+		
+          document.getElementById("demosoc").src="img/"+"9"+j+".png";
 		  j++;
         }
-         if(j>=5){
+         if(j>=6){
 		   i=1;
 		   j=1;
 		 }		
-         i++; 
+         
         },2500);
         
       }
